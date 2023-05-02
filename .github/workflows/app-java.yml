@@ -38,7 +38,7 @@ jobs:
       run: mvn -f ./App-Java/pom.xml package
       
     - name: Ahora donde estamos
-      run: pwd && ls
+      run: cd '/App-Java' && ls
       
     - name: Run the application 
       run: java -jar target/app-stemdo-1.0-SNAPSHOT.jar
