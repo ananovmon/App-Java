@@ -30,6 +30,9 @@ jobs:
         
     - name: Print working directory
       run: pwd
+      
+    - name: Listar archivos que hay en la ruta
+      run: ls
 
     - name: Build with Maven
       run: mvn -f ./pom.xml package
