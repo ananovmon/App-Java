@@ -33,3 +33,9 @@ jobs:
       
     - name: Run the application 
       run: java -jar ./App-Java/target/app-stemdo-1.0-SNAPSHOT.jar
+      
+    - name: Publish Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-java
+        path: ./App-Java/target/app-stemdo-1.0-SNAPSHOT.jar
