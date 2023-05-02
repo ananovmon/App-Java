@@ -31,11 +31,14 @@ jobs:
     - name: Print working directory
       run: pwd
       
-    - name: Listar archivos que hay en la ruta
-      run: cd App-Java && ls
+   ## - name: Listar archivos que hay en la ruta
+   ##   run: cd App-Java && ls
 
     - name: Build with Maven
       run: mvn -f ./App-Java/pom.xml package
+      
+    - name: Ahora donde estamos
+      run: pwd && ls
       
     - name: Run the application 
       run: java -jar target/app-stemdo-1.0-SNAPSHOT.jar
