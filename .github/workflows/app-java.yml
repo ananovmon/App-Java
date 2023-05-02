@@ -32,7 +32,7 @@ jobs:
       run: pwd
 
     - name: Build with Maven
-      run: mvn -f \App-Java\pom.xml
+      run: mvn -f ./pom.xml package
       
     - name: Run the application 
       run: java -jar target/app-stemdo-1.0-SNAPSHOT.jar
